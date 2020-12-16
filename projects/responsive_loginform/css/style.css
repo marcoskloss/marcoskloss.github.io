@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.wave {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
+}
+
+.img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.img img {
+  width: 500px;
+}
+
+form {
+  width: 400px;
+}
+
+.avatar {
+  width: 100px;
+}
+
+form h2 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin: 1.8rem 0;
+}
+
+.user-icon {
+  padding-top: 10px;
+  margin-right: 15px;
+}
+
+.user-icon > i {
+  transition: .3s;
+}
+
+.input-div.username {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 1.8rem;
+  height: 40px;
+  font-size: 1.4rem;
+  color: #d9d9d9;
+}
+
+.input-div.username:hover .user-icon > i {
+  color: #38d39f;
+}
+
+.username label {
+  position: absolute;
+  left: 65px;
+  bottom: 1px;
+  font-size: 1.6rem;
+} 
+
+.username input {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+  font-size: 1.5rem;
+  transition: .3s;
+}
+
+.username input:focus {
+  border-color: #38d39f;
+}
+
+.password input{
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: 1.5rem;
+  padding-left: 15px;
+}
+
+.input-div.password {
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 40px;
+  font-size: 1.4rem;
+  color: #d9d9d9;
+  margin-top: 2.8rem;
+}
+
+.input-div.password:hover .lock-icon > i {
+  color: #38d39f;
+}
+
+.password label {
+  position: absolute;
+  left: 65px;
+  bottom: 1px;
+  font-size: 1.6rem;
+}
+
+.password input {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+  font-size: 1.6rem;
+  transition: .3s;
+}
+
+.password input:focus {
+  border-color: #38d39f;
+}
+
+.lock-icon {
+  padding-top: 10px;
+  margin-right: 15px;
+}
+
+.lock-icon > i {
+  transition: .3s;
+}
+
+.forgot-password {
+  display: block;
+  text-decoration: none;
+  color: #d9d9d9;
+  padding-top: 2px;
+  text-align: end;
+  transition: .3s;
+}
+
+.forgot-password:hover {
+  color: #38d39f;
+}
+
+.btn-submit {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background: #38d39f;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-submit:active {
+  background: #00BFA6;
+}
+
+@media screen and (max-width: 1100px) {
+  
+  .wave {
+    display: none;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .login-container {
+    margin: 0 auto;
+  }
+
+}
+
+
+
+
+
