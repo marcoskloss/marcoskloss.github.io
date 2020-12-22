@@ -1,0 +1,77 @@
+.wire {
+    border-bottom: 3px solid rgb(8, 8, 8);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 30px;
+    top: -15px;
+    white-space: nowrap;
+}
+
+.wire ul {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 33px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.wire li {
+    background: rgb(78, 184, 29);
+    display: inline-block;
+    width: 15px;
+    height: 28px;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 2px 20px 4px blue;
+    animation-name: pair-shine;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.wire li:nth-child(odd) {
+    background: rgb(235, 42, 42);
+    animation-name: odd-shine;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.wire li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    border-radius: 4px;
+    top: -5px;
+    transform: translateX(-5px);
+}
+
+@keyframes pair-shine {
+    0%, 100%{
+        background: rgb(87, 199, 35);
+        box-shadow: 0 2px 20px 4px rgba(87, 199, 35, 1);
+    }
+
+    50%{
+        background: rgba(87, 199, 35, 0.5);
+        box-shadow: 0 2px 20px 4px rgba(87, 199, 35, 0.3);
+    }
+}
+
+@keyframes odd-shine {
+    50%{
+        background: rgb(255, 37, 37);
+        box-shadow: 0 2px 20px 4px rgba(235, 42, 42, 1);
+    }
+
+    0%, 100%{
+        background: rgba(255, 37, 37, 0.5);
+        box-shadow: 0 2px 20px 4px rgba(235, 42, 42, 0.3);
+    }
+}
