@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Exo+2:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
   <title>Marcos Kloss - Developer</title>
 </head>
@@ -16,33 +18,36 @@
         <button class="link-projects button-transparent">Projetos</button>
       </div>
       <div class="nav-social">
-        <img src="./assets/svg/github.svg" alt="Github">
-        <img src="./assets/svg/linkedin.svg" alt="Linkedin">
+        <a href="https://github.com/marcoskloss"><img src="./assets/svg/github.svg" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/marcos-kloss/"><img src="./assets/svg/linkedin.svg" alt="Linkedin"></a>
       </div>
     </nav>
   </header>
 
-  <section class="content">
-    <div class="content-title">
-      <h1 class="title">Marcos Kloss</h1>
-      <h2 class="subtitle">Web Developer</h2>
-    </div>
-    <div class="content-about">Lorem Ipsum is simply dummy text of the printing
-      and typesetting industry. Lorem Ipsum has been the industry's standard
-      dummy text ever since the 1500s, when an unknown printer took a galley
-      of type and scrambled it to make a type specimen book.
-      It has survived not only five centuries, but also the leap into
-      electronic typesetting, remaining essentially unchanged.
-    </div>
-    <div class="content-cards">
-      <img src="./assets/img/css.png" alt="CSS">
-      <img src="./assets/img/javascript.png" alt="JavaScript">
-      <img src="./assets/img/html.png" alt="HTML">      
-    </div>
-  </section>
-  
-  <section class="photo">
-    <img src="./assets/img/foto-marcos.jpg" alt="Foto de Marcos Kloss">
-  </section>
+  <div class="container">
+    <section class="content">
+      <div class="content-title">
+        <h1 class="title">Marcos Kloss</h1>
+        <h2 class="subtitle">Web Developer</h2>
+      </div>
+      <div class="content-about">
+        <p>Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book.
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+      <div class="content-cards">
+        <img src="./assets/img/css.png" class="techs" alt="CSS">
+        <img src="./assets/img/javascript.png" class="techs" alt="JavaScript">
+        <img src="./assets/img/html.png" class="techs" alt="HTML">      
+      </div>
+    </section>
+    
+    <section class="photo">
+      <img src="./assets/img/foto-marcos.jpg" alt="Foto de Marcos Kloss">
+    </section>
+  </div>
 </body>
 </html>

@@ -1,5 +1,8 @@
 @import "partials/colors";
 @import "partials/buttons";
+@import "partials/titles";
+@import "partials/paragraph";
+@import "partials/techs";
 
 * {
   margin: 0;
@@ -24,6 +27,85 @@ nav {
   .nav-links {
     width: 360px;
     height: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-social {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  margin-top: 55px;
+  display: flex;
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .content-title {
+    height: 220px;
+    width: 100%;
+    
+    background: $purple;
+    border-radius: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 64px;
+    letter-spacing: 1.5px;
+  }
+
+  .subtitle {
+    margin-top: -15px;
+
+    font-weight: 200;
+    font-size: 38px;
+    letter-spacing: -2px;
+  }
+
+  .content-about {
+    margin-top: 32px;
+  }
+  
+  .content-cards {
+    width: 370px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+
+    img {
+      height: 70px;
+    }
+  }
+  
+}
+
+.photo {
+  border: 6px solid $purple;
+  margin-left: 15%;
+  height: fit-content;
+  border-radius: 50%;
+
+  img {
+    width: 300px;
+    border-radius: 50%;
   }
 }
 

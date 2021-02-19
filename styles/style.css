@@ -1,6 +1,7 @@
 .button-transparent {
   border: 2px solid #4831D4;
   border-radius: 4px;
+  cursor: pointer;
   height: 35px;
   width: 100px;
   background: transparent;
@@ -27,6 +28,23 @@
 .button-transparent:hover::before {
   width: calc(100% + 10px);
   background: #4831D4;
+}
+
+.title {
+  font-family: 'Exo 2', sans-serif;
+  color: #CCF381;
+}
+
+.subtitle {
+  font-family: 'Abel', sans-serif;
+  color: #EDF1F7;
+}
+
+p {
+  color: #EDF1F7;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
 }
 
 * {
@@ -59,5 +77,111 @@ nav {
 nav .nav-links {
   width: 360px;
   height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-social {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-social img {
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .content-title {
+  height: 220px;
+  width: 100%;
+  background: #4831D4;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .title {
+  font-weight: bold;
+  font-size: 64px;
+  letter-spacing: 1.5px;
+}
+
+.content .subtitle {
+  margin-top: -15px;
+  font-weight: 200;
+  font-size: 38px;
+  letter-spacing: -2px;
+}
+
+.content .content-about {
+  margin-top: 32px;
+}
+
+.content .content-cards {
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 24px;
+}
+
+.content .content-cards img {
+  height: 70px;
+}
+
+.photo {
+  border: 6px solid #4831D4;
+  margin-left: 15%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50%;
+}
+
+.photo img {
+  width: 300px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
