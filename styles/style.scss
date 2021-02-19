@@ -1,0 +1,31 @@
+@import "partials/colors";
+@import "partials/buttons";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $gray;
+  height: 100vh;
+  width: 85%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 24px;
+
+  .nav-links {
+    width: 360px;
+    height: 35px;
+  }
+}
+
+
+
