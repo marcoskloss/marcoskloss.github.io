@@ -1,0 +1,66 @@
+.navbar {
+  width: 100%;
+  height: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  height: 30px;
+  width: 100px;
+
+  position: relative;
+
+  font-size: .9rem;
+
+  background: transparent;
+  border: 2px solid var(--purple);
+  border-radius: 3px;
+
+  overflow: hidden; 
+
+  &:nth-child(2) {
+    margin: 0 2rem;
+  }
+
+  &::before {
+    content: "";
+
+    width: 0;
+    height: 100%;
+
+    background: var(--purple);
+
+    position: absolute;
+    z-index: -1;
+    left: -2px;
+    top: 0;
+
+    transform: skewX(-10deg);
+    transition: .7s ease;
+  }
+
+  &:hover {
+    &::before {
+      width: calc(100% + 5px);
+    }
+  }
+}
+
+.social{ 
+ img {
+  cursor: pointer;
+  transition: transform .6s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:nth-child(2) {
+    margin-left: 1rem;
+  }
+ }
+}
+
